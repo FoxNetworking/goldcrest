@@ -45,7 +45,7 @@ var colorCmd = tempest.Command{
 		if len(colorString) != 3 && len(colorString) != 6 {
 			itx.SendReply(tempest.ResponseData{
 				Content: "Invalid color specified!",
-			}, false)
+			}, true)
 			return
 		}
 
@@ -55,7 +55,7 @@ var colorCmd = tempest.Command{
 		if err != nil {
 			itx.SendReply(tempest.ResponseData{
 				Content: "Invalid hexadecimal color specified!",
-			}, false)
+			}, true)
 			return
 		}
 		if len(colorString) == 3 {
@@ -71,6 +71,6 @@ var colorCmd = tempest.Command{
 					Color: uint32(color),
 				},
 			},
-		}, true)
+		}, false)
 	},
 }
