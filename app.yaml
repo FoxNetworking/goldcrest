@@ -1,1 +1,6 @@
 runtime: go119
+env_variables:
+  # Change "regulus-regulus" to your own project's name or ID.
+  DISCORD_TOKEN: sm://regulus-regulus/discord-token
+  DISCORD_BOT_ID: sm://regulus-regulus/discord-bot-id
+  DISCORD_PUBLIC_KEY: sm://regulus-regulus/discord-public-key
