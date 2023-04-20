@@ -31,7 +31,7 @@ func main() {
 
 	// Finally, we can start.
 	client := tempest.CreateClient(tempest.ClientOptions{
-		ApplicationId: tempest.StringToSnowflake(appId),
+		ApplicationID: tempest.StringToSnowflake(appId),
 		PublicKey:     publicKey,
 		Token:         token,
 		PreCommandExecutionHandler: func(itx tempest.CommandInteraction) *tempest.ResponseData {
